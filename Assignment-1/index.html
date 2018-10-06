@@ -5,17 +5,27 @@
     <title>LunchChecker</title>
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
+    <style media="screen">
+      body
+      {
+        background-image: url(bg.jpg);
+        background-repeat: no-repeat;
+
+      }
+    </style>
   </head>
   <body ng-app="LunchCheck">
-    <div class="mainDiv" ng-controller="LunchCheckController">
-      <input type="text" id="foodItems" placeholder="Enter Food Item Names" ng-model="items">
-    </br>
-      <button type="button" name="button" ng-click="LunchCheckFunc()">Check If Too Much</button>
-      <div class="msg">
-        {{showMsg}}
+    <center><h3 style="color:#F16F4B">WELCOME TO LUNCH CHECKER APP</h3></center>
+    <center>
+      <div class="mainDiv" ng-controller="LunchCheckController">
+        <input type="text" id="foodItems" placeholder="Enter Food Item Names" ng-model="items">
+      </br>
+        <button type="button" name="button" ng-click="LunchCheckFunc()" style="color:#ffffff;background:#BD7111;margin-top:10px;margin-bottom: 10px;">Check If Too Much</button>
+        <div class="msg" style="color:#ffffff">
+          {{showMsg}}
+        </div>
       </div>
-    </div>
-
+    </center>
 
 
   </body>

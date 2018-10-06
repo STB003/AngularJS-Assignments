@@ -29,15 +29,15 @@
     {
       if (count == 0)
       {
-        return 'Please enter data first';
+        return 'Please Enter Data First';
       }
       else if (count <= 3)
       {
-        return 'Enjoy!';
+        return 'Enjoy Your Food....!';
       }
       else
       {
-        return 'Too much!';
+        return 'Ooopss....Too much....!';
       }
     }
   }
