@@ -2,9 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Assignment-1</title>
+    <title>LunchChecker</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
   </head>
-  <body>
-    Hello
+  <body ng-app="LunchCheck">
+    <div class="mainDiv" ng-controller="LunchCheckController">
+      <input type="text" id="foodItems" placeholder="Enter Food Item Names" ng-model="items">
+    </br>
+      <button type="button" name="button" ng-click="LunchCheckFunc()">Check If Too Much</button>
+      <div class="msg">
+        {{showMsg}}
+      </div>
+    </div>
+
+
+
   </body>
 </html>
