@@ -1,0 +1,9 @@
+<div class="form-group narrow-button">
+	<ol>
+	  <li ng-repeat="item in FIDCtrl.items">
+	    {{ item.short_name }} :: {{ item.name }} ::: {{ item.description }}
+	    <button ng-click="FIDCtrl.onRemove({index:$index});" class="btn btn-danger"><i class="fa fa-trash"></i>Don't want this one!</button>
+	  </li>
+	</ol>
+</div>
+<div class="form-group narrow-button text-danger" ng-if="FIDCtrl.checkList();">Nothing found</div>
